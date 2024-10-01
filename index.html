@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveMo</title>
+    <link href="./drivemo.ico" rel="icon" type="image/png"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-links" >
+            <a href="#home" class="nav-link" >Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="mailto:garvitarora2888@gmail.com" target="_blank" class="link">
+            <button class="nav-link">Contact Us</button>
+            </a>
+            <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+            <img src="./dark-mode.svg" alt="dark mode" class="dark-mode-icon">
+            </button>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="banner" id="home">
+    </div>
+
+    <div class="container">
+        <section id="about">
+            <h1>We are launching in</h1>
+            <div id="countdown" class="countdown">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+            <p>Get ready for an amazing experience!</p>
+        </section>
+    </div>
+
+    <script src="countdown.js"></script>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+         let lastScrollY = window.scrollY;
+    
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > lastScrollY) {
+            // Scrolling down, hide the navbar
+            nav.classList.add('hidden');
+        } else {
+            // Scrolling up, show the navbar
+            nav.classList.remove('hidden');
+        }
+        lastScrollY = window.scrollY;
+    }); 
+    </script>
+</body>
+
+</html>

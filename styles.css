@@ -96,6 +96,7 @@ nav {
     z-index: 1000;
     /* Ensure it stays above other content */
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -241,6 +242,10 @@ body.dark-mode .card-description {
         font-size: 2rem;
     }
 
+
+
+
+
     p {
         font-size: 1rem;
     }
@@ -255,8 +260,10 @@ body.dark-mode .card-description {
         font-size: 0.9rem;
         padding: 8px 16px;
     }
+
     .about-section h2 {
         font-size: 1.75rem;
+
     }
 
     .about-section p {
@@ -288,10 +295,12 @@ body.dark-mode .card-description {
         flex-direction: column;
         gap: 0.5rem;
     }
-     .dark-mode-icon {
+
+    .dark-mode-icon {
         width: 20px;
         height: 20px;
     }
+
     .countdown {
         gap: 10px;
     }
@@ -303,6 +312,7 @@ body.dark-mode .card-description {
     .countdown-label {
         font-size: 0.8rem;
     }
+
     .about-section {
         padding: 20px;
     }
@@ -329,6 +339,7 @@ body {
 nav .logo img {
     width: 100px;
 }
+
 nav .nav-links {
     display: flex;
     justify-content: center;
@@ -362,6 +373,7 @@ nav .dark-mode-icon {
     width: 20px;
     height: 20px;
 }
+
 .container {
     padding: 20px;
 }
